@@ -14,6 +14,7 @@
 		FBA941401C6B78F800DB926D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA9413E1C6B78F800DB926D /* LaunchScreen.storyboard */; };
 		FBA9414B1C6B78F800DB926D /* KalveraTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9414A1C6B78F800DB926D /* KalveraTestTests.swift */; };
 		FBA941561C6B78F800DB926D /* KalveraTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA941551C6B78F800DB926D /* KalveraTestUITests.swift */; };
+		FBA9416A1C6C008500DB926D /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA941691C6C008500DB926D /* ResultsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FBA941511C6B78F800DB926D /* KalveraTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalveraTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA941551C6B78F800DB926D /* KalveraTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalveraTestUITests.swift; sourceTree = "<group>"; };
 		FBA941571C6B78F800DB926D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA941691C6C008500DB926D /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				FBA941351C6B78F700DB926D /* AppDelegate.swift */,
 				FBA941371C6B78F800DB926D /* ViewController.swift */,
+				FBA941691C6C008500DB926D /* ResultsTableViewCell.swift */,
 				FBA941391C6B78F800DB926D /* Main.storyboard */,
 				FBA9413C1C6B78F800DB926D /* Assets.xcassets */,
 				FBA9413E1C6B78F800DB926D /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				FBA941381C6B78F800DB926D /* ViewController.swift in Sources */,
 				FBA941361C6B78F700DB926D /* AppDelegate.swift in Sources */,
+				FBA9416A1C6C008500DB926D /* ResultsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +404,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KalveraTest",
+				);
 				INFOPLIST_FILE = KalveraTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tnb.KalveraTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,7 +420,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KalveraTest",
+				);
 				INFOPLIST_FILE = KalveraTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tnb.KalveraTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,6 +499,7 @@
 				FBA9415C1C6B78F800DB926D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBA9415D1C6B78F800DB926D /* Build configuration list for PBXNativeTarget "KalveraTestTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +508,7 @@
 				FBA9415F1C6B78F800DB926D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBA941601C6B78F800DB926D /* Build configuration list for PBXNativeTarget "KalveraTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +517,7 @@
 				FBA941621C6B78F800DB926D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
